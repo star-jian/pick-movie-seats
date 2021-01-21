@@ -13,7 +13,7 @@ function setMovieData(movieIndex, moviePrice){
     localStorage.setItem('selectedMoviePrice', moviePrice)
 }
 
-// update total and count
+// update total and counts
 function updateSelectedCount(){
     const selectedSeats = document.querySelectorAll('.row .seat.selected')
     const seatsIndex = [...selectedSeats].map(seat => [...seats].indexOf(seat))
